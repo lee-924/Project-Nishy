@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+
+
+*{
+    color:white;
+    padding:0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #0D0A0B;
+    position: relative;
+    height: 100vh
+}
+
+header {
+    border:2px solid white;
+    height:auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    font-size: 50px;
+    font-family: Marck Script;
+    text-align: center;
+    color: #9DACFF;
+    
+}
+
+.cake { 
+    margin: 30px;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+
+}
+
+main{ 
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border:2px solid white;
+}
+.box { 
+    height: 180px;
+    width: 80vw;
+    background-color: #E63946;
+    margin-top: 100px;
+    border: 5px solid white;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.msg {
+    height: 100px;
+    width:100px; 
+    margin: 20px;
+}
+
+.badDay {
+    height: 100px;
+    width: 100px;
+}
+.bText {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: monospace;
+}
+
+.sparkle { 
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    animation-name: sparkle;
+    animation-duration: 3s;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+}
+
+.s1{ 
+    top: 20px;
+    left:20px;
+}
+
+.s2 { 
+    top:20px;
+    right: 20px;
+}
+
+.s3{ 
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+@keyframes sparkle {
+    0% { 
+        stroke: #E63946;
+    }
+    50% { 
+        stroke: #9DACFF;
+    }
+    100% {
+        stroke: #339989;
+    }
+    
+}
+
+.box1 {
+    position: absolute;
+    height: 50vh;
+    width: 90vw;
+    background-color: rgb(44, 44, 42);
+    border: 5px solid white;
+    border-radius: 50px;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding-top: 100px;
+    display:none;
+    justify-content: center;
+    align-items: flex-start;
+    animation-name: box;
+    animation-duration: 2s;
+    animation-play-state: paused;
+}
+
+.nishyPoem {
+    font-size: 40px;
+    display: none
+
+}
+
+@keyframes box {
+    0%{ 
+        height: 0px;
+    }
+
+    100%{ 
+        height: 50vh;
+
+    }
+    
+}
+
+.cancel {
+    margin:10px;
+    height:50px;
+    width: 50px;
+    border:2px solid white;
+    border-radius: 10px;
+    font-size: 40px;
+    background-color: red;
+    position: absolute;
+    top:10px;
+    right: 10px;
+
+}
