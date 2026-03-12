@@ -10,11 +10,11 @@
 body {
     background-color: #0D0A0B;
     position: relative;
-    height: 100vh
+    height: 150vh;
+
 }
 
 header {
-    border:2px solid white;
     height:auto;
     width: 100vw;
     display: flex;
@@ -23,17 +23,18 @@ header {
     align-items: center;
 }
 .title {
-    font-size: 50px;
+    font-size: 2.3rem;
     font-family: Marck Script;
     text-align: center;
     color: #9DACFF;
+    margin-bottom: 10px;
     
 }
 
 .cake { 
     margin: 30px;
-    height: 150px;
-    width: 150px;
+    height: 4rem;
+    width: 4rem;
     display: flex;
     justify-content: center;
 
@@ -45,15 +46,15 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border:2px solid white;
 }
 .box { 
-    height: 180px;
+    height: 40vw;
     width: 80vw;
-    background-color: #E63946;
+    background-color: #8b121c;
     margin-top: 100px;
-    border: 5px solid white;
-    border-radius: 50px;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 40px blue;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,24 +63,25 @@ main{
 }
 
 .msg {
-    height: 100px;
-    width:100px; 
+    height: 2.5rem;
+    width:  2.5rem; 
     margin: 20px;
 }
 
 .badDay {
-    height: 100px;
-    width: 100px;
+    height: 2.5rem;
+    width:  2.5rem; 
+    margin: 20px;
 }
 .bText {
-    font-size: 30px;
+    font-size: 1rem;
     margin-bottom: 20px;
     font-family: monospace;
 }
 
 .sparkle { 
-    height: 100px;
-    width: 100px;
+    height: 10vh;
+    width: 10vw;
     position: absolute;
     animation-name: sparkle;
     animation-duration: 3s;
@@ -116,11 +118,11 @@ main{
 }
 
 .box1 {
-    position: absolute;
+    position: fixed;
     height: 50vh;
     width: 90vw;
     background-color: rgb(44, 44, 42);
-    border: 5px solid white;
+    border: 2px solid white;
     border-radius: 50px;
     top: 50%;
     left:50%;
@@ -135,7 +137,7 @@ main{
 }
 
 .nishyPoem {
-    font-size: 40px;
+    font-size: 0.8rem;
     display: none
 
 }
@@ -154,11 +156,11 @@ main{
 
 .cancel {
     margin:10px;
-    height:50px;
-    width: 50px;
+    height:1.5rem;
+    width: 1.5rem;
     border:2px solid white;
     border-radius: 10px;
-    font-size: 40px;
+    font-size: 1rem;
     background-color: red;
     position: absolute;
     top:10px;
