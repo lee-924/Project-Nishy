@@ -103,6 +103,14 @@ body {
     animation-duration: 3s;
     animation-play-state: paused;
     animation-fill-mode: forwards;
+    color:white;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
 }
 
 @keyframes opening {

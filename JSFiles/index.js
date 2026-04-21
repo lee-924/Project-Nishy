@@ -36,8 +36,31 @@ codeBtn.forEach(btn => {
 
 
 
+let pinDiv = document.querySelector('.pinDiv')
+const vanish = new Audio('../sound/vanish.mp3')
+const opening = new Audio('../sound/opening.mp3')
+let lock = document.querySelector('.lock')
 function loading() {
+    let count = 0;
+    let list = [['<p>Initialsing Ultimate Friendship</p>'],['<p>Conducting Fake Friend Test</p>'],['<p>bla bla bla</p>'],['<p>Test Complete</p>']]
+    let interval = setInterval(() => {
+        hiddenDiv.innerHTML += list[count]
+        count += 1
+        if (count >= 5 ) {
+            clearInterval(interval);
+        }
+    },1000)
     
+setTimeout(() => {
+    pinDiv.style.display = 'none'
+    vanish.play()
+    lock.style.animationPlayState = 'running'
+    setTimeout(() => {
+        lock.style.animationPlayState = 'running'
+        opening.play()
+    },2000)
+    
+},6000)
 
 }
 
