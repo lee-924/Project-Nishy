@@ -43,13 +43,17 @@ let lock = document.querySelector('.lock')
 function loading() {
     let count = 0;
     let list = [['<p>Initialsing Ultimate Friendship</p>'],['<p>Conducting Fake Friend Test</p>'],['<p>bla bla bla</p>'],['<p>Test Complete</p>']]
-    let interval = setInterval(() => {
+    
+    setTimeout(() => {
+        let interval = setInterval(() => {
         hiddenDiv.innerHTML += list[count]
         count += 1
         if (count >= 5 ) {
             clearInterval(interval);
         }
     },1000)
+    
+    },2000)
     
 setTimeout(() => {
     pinDiv.style.display = 'none'
@@ -60,7 +64,7 @@ setTimeout(() => {
         opening.play()
     },2000)
     
-},6000)
+},10000)
 
 }
 

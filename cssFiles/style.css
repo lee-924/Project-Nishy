@@ -10,7 +10,7 @@
 body {
     background-color: #0D0A0B;
     position: relative;
-    height: 150vh;
+    height: 100vh;
 
 }
 
@@ -135,7 +135,7 @@ body {
 }
 
 header {
-    height:auto;
+    height:40vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -165,14 +165,14 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: top;
 }
 .box { 
-    height: 40vw;
-    width: 80vw;
-    background-color: #8b121c;
-    margin-top: 100px;
-    border: 2px solid white;
+    height: 30vw;
+    width: 60vw;
+    background-color: #ca2d3a;
+    margin-top: 20px;
+    border:transparent;
     border-radius: 10px;
     box-shadow: 0 0 40px blue;
     display: flex;
@@ -180,6 +180,10 @@ main{
     justify-content: center;
     align-items: center;
 
+}
+
+.b2 {
+    margin-top: 60px;
 }
 
 .msg {
