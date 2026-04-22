@@ -3,7 +3,7 @@ let input = '';
 let textArea = document.querySelector('.textArea')
 let hiddenDiv = document.querySelector('.hiddenDiv')
 
-const clickSound = new Audio('./sound/codeBtnSound.mp3')
+const clickSound = new Audio('sound/codeBtnSound.mp3')
 const confirmed = new Audio('../sound/confirmed.mp3')
 
 codeBtn.forEach(btn => {
@@ -78,12 +78,41 @@ let b1 = document.querySelector('.b1')
 
 let npoem = document.querySelector('.nishyPoem')
 
+let poem =
+`Twinkle Twinkle Little Star
+How I wonder What you are
+Up above the Sky you are 
+Like a little shooting star
 
+falling down every hour 
+feeling that you have no power
+but we here to give you our
+share of life and bloom your flower
+
+time to take a small shower
+clean up that mess of flour 
+get up and enjoy the hour 
+uhh I better be a great bower
+coz dont have time to continue this fire
+keep twinkling little star.`
+
+
+let ind = 0
+    function typePoem() {
+        if (ind < poem.length) {
+            npoem.textContent += poem[ind]
+            ind++
+
+        } 
+        setTimeout(typePoem,50);
+    }
 b1.addEventListener('click', () => {
     bx1.style.display = 'flex'
+    npoem.style.display = 'block'
     bx1.style.animationPlayState = 'running'
     setTimeout(() => {
-    npoem.style.display = 'block'
+        typePoem()
+    
 },2000)
 
 
@@ -92,5 +121,13 @@ b1.addEventListener('click', () => {
 let cancel = document.querySelector('.cancel')
 cancel.addEventListener('click', () => {
     bx1.style.display = 'none'
+    npoem.textContent = ''
     npoem.style.display = 'none'
+    ind = 0;
+})
+
+let b2 = document.querySelector('.b2')
+
+b2.addEventListener('click', () => {
+    window.location.href = 'goofyQuiz.html'
 })
