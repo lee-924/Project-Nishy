@@ -3,7 +3,7 @@ let input = '';
 let textArea = document.querySelector('.textArea')
 let hiddenDiv = document.querySelector('.hiddenDiv')
 
-const clickSound = new Audio('../sound/codeBtnSound.mp3')
+const clickSound = new Audio('./sound/codeBtnSound.mp3')
 const confirmed = new Audio('../sound/confirmed.mp3')
 
 codeBtn.forEach(btn => {
