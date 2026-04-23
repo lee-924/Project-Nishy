@@ -4,7 +4,7 @@ let textArea = document.querySelector('.textArea')
 let hiddenDiv = document.querySelector('.hiddenDiv')
 
 const clickSound = new Audio('sound/codeBtnSound.mp3')
-const confirmed = new Audio('../sound/confirmed.mp3')
+const confirmed = new Audio('sound/confirmed.mp3')
 
 codeBtn.forEach(btn => {
     btn.addEventListener('click',() => {
@@ -37,18 +37,18 @@ codeBtn.forEach(btn => {
 
 
 let pinDiv = document.querySelector('.pinDiv')
-const vanish = new Audio('../sound/vanish.mp3')
-const opening = new Audio('../sound/opening.mp3')
+const vanish = new Audio('sound/vanish.mp3')
+const opening = new Audio('sound/opening.mp3')
 let lock = document.querySelector('.lock')
 function loading() {
     let count = 0;
-    let list = [['<p>Initialsing Ultimate Friendship</p>'],['<p>Conducting Fake Friend Test</p>'],['<p>bla bla bla</p>'],['<p>Test Complete</p>']]
+    let list = [['<p>Initialsing Ultimate Friendship</p>'],['<p>Conducting Fake Friend Test</p>'],['<p>Test result: False</p>'],['<p>Test Complete</p>']]
     
     setTimeout(() => {
         let interval = setInterval(() => {
         hiddenDiv.innerHTML += list[count]
         count += 1
-        if (count >= 5 ) {
+        if (count >= 4 ) {
             clearInterval(interval);
         }
     },1000)
@@ -84,17 +84,17 @@ How I wonder What you are
 Up above the Sky you are 
 Like a little shooting star
 
-falling down every hour 
+Falling down every hour 
 feeling that you have no power
 but we here to give you our
 share of life and bloom your flower
 
-time to take a small shower
-clean up that mess of flour 
-get up and enjoy the hour 
-uhh I better be a great bower
-coz dont have time to continue this fire
-keep twinkling little star.`
+Uhh I better be a great bow-er
+coz I cant find any more hour
+to finish this banger poem of our,
+keep on twinkling little star.
+                                 
+                        -lee`
 
 
 let ind = 0

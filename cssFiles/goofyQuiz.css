@@ -10,14 +10,12 @@ body {
 
 .yapping {
     position: fixed;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    top:20vh;
+    left: 10vw;
     color:white;
     text-align: left;
     width: 80vw;
     padding: 0px;
-  
     font-size: large;
 
 }

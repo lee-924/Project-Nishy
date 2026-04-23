@@ -231,9 +231,10 @@ main{
 }
 
 .s3{ 
-    bottom: 50px;
+    bottom: 2vh;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,0%);
+
 }
 @keyframes sparkle {
     0% { 
