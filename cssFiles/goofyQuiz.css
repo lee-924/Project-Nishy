@@ -7,7 +7,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    overflow-y: auto;
+   ;
     }
 
 .yapping {
@@ -19,6 +19,7 @@ body {
     width: 80vw;
     padding: 0px;
     font-size: large;
+    overflow-y: auto
 
 }
 
