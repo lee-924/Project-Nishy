@@ -6,7 +6,9 @@ body {
     margin:0px;
     display: flex;
     align-items: center;
-    justify-content: flex-start;}
+    justify-content: flex-start;
+    overflow-y: auto;
+    }
 
 .yapping {
     position: fixed;
